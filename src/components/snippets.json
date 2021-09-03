@@ -1,0 +1,78 @@
+[
+    {
+        "name": "Header 1",
+        "value": "# "
+    },
+    {
+        "name": "Header 2",
+        "value": "## "
+    },
+    {
+        "name": "Header 3",
+        "value": "### "
+    },
+    {
+        "name": "Header 4",
+        "value": "#### "
+    },
+    {
+        "name": "Header 5",
+        "value": "##### "
+    },
+    {
+        "name": "Header 6",
+        "value": "###### "
+    },
+    {
+        "name": "Italic",
+        "value": "* *"
+    },
+    {
+        "name": "Bold",
+        "value": "** **"
+    },
+    {
+        "name": "Bold & Italic",
+        "value": "*** ***"
+    },
+    {
+        "name": "Strikethrough",
+        "value": "~~ ~~"
+    },
+    {
+        "name": "Unordered list",
+        "value": "- Item 1\n- Item 2"
+    },
+    {
+        "name": "Ordered list",
+        "value": "1. Item 1\n2. Item 2"
+    },
+    {
+        "name": "Link",
+        "value": "[Text](URL)"
+    },
+    {
+        "name": "Image",
+        "value": "![Alt Text](URL)"
+    },
+    {
+        "name": "Inline Code",
+        "value": "`code`"
+    },
+    {
+        "name": "Multiline Code",
+        "value": "```\ncode\n```"
+    },
+    {
+        "name": "Table",
+        "value": "| t1 | t2 | t3 |\n| --- | --- | --- |\n| l1 | l2 | l3 |\n| l4 | l5 | l6 |"
+    },
+    {
+        "name": "Blockquotes",
+        "value": "> "
+    },
+    {
+        "name": "Horizontal Rule",
+        "value": "\n---\n"
+    }
+]

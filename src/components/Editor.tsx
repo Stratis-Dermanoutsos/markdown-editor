@@ -1,4 +1,6 @@
-import React, { useRef } from 'react'
+import React, { useRef } from 'react';
+import Dropup from './Dropup';
+import { snippets, Snippet } from './snippets';
 
 export default function Editor({ renewContent }: { renewContent: (content: string) => void }) {
     const textareaRef = useRef<HTMLTextAreaElement>(null);
@@ -54,7 +56,7 @@ export default function Editor({ renewContent }: { renewContent: (content: strin
 
     function exportFile() {
         var fileContents = (textareaRef.current) ? textareaRef.current.value : '';
-        var filename = "your-markdown.md";
+        var filename = 'your-markdown.md';
 
         // Create an invisible element to serve as a link
         var element = document.createElement('a');
@@ -70,6 +72,13 @@ export default function Editor({ renewContent }: { renewContent: (content: strin
         document.body.removeChild(element);
     }
 
+    function addSnippet(val: string): void {
+        if (textareaRef.current) {
+            textareaRef.current.value += val;
+            renewContent(textareaRef.current.value);
+        }
+    }
+
     return (
         <div id="Editor" className="col-md-6 d-flex flex-column p-3">
             <h1 className="mb-3 text-center">MARKDOWN EDITOR</h1>
@@ -78,8 +87,7 @@ export default function Editor({ renewContent }: { renewContent: (content: strin
                 <label htmlFor="markdownTextArea">Your markdown</label>
             </div>
             <div className="d-flex justify-content-end py-3">
-                <button className="btn btn-primary me-auto">Snippets</button>
-                <input type="file" id="file-input" className="invisible" />
+                <Dropup items={(snippets as Snippet[])} addSnippet={addSnippet} />
                 <button onClick={openFile} className="btn btn-primary mx-3">Open file</button>
                 <button onClick={exportFile} className="btn btn-primary">Export file</button>
             </div>

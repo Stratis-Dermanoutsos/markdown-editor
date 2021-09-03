@@ -1,12 +1,9 @@
 # Markdown Editor
 
+A markdown editor app on your web implemented with ***TypeScript*** and ***React***.
+
 ![screenshot_1](./Screenshot_1.png)
 
-## TODO list
-
-- [x] Make completely responsive
-- [x] Fix UI
-- [x] Enable file upload function
-- [ ] Implement snippets
+![screenshot_2](./Screenshot_2.png)
 
 <ins>Note</ins>: This file was written using the app.
