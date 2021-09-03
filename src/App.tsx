@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import './stylesheets/App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Reader from './components/Reader';
+import Editor from './components/Editor';
 
 function App() {
+  const [content, setContent] = useState(``);
+
+  function renewContent(newContent: string) {
+    setContent(newContent);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App container">
+      <div className="row">
+        <Editor renewContent={renewContent} />
+        <Reader content={content} />
+      </div>
     </div>
   );
 }
