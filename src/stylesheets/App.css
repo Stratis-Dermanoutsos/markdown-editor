@@ -11,9 +11,8 @@ html #Reader, body #Reader {
 }
 
 html #Reader div, body #Reader div {
-  background: #3F51B5;
-  border-radius: 25px;
-  color: #CFCFCF;
+  background: #f7ca57;
+  color: #515151;
   font-family: 'Poppins', sans-serif;
 }
 

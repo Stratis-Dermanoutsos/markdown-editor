@@ -3,9 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 // colors
-$editor-background: #3F51B5;
-$text-light: #CFCFCF;
-$text-dark: #515151;
+$reader-background: #f7ca57;
+$text: #515151;
 
 @mixin vertical-placement {
     height: 90vh;
@@ -20,16 +19,15 @@ html, body {
         @include vertical-placement;
 
         div {
-            background: $editor-background;
-            border-radius: 25px;
-            color: $text-light;
+            background: $reader-background;
+            color: $text;
             font-family: 'Poppins', sans-serif;
         }
     }
 
     #Editor {
         @include vertical-placement;
-        color: $text-dark;
+        color: $text;
         font-family: 'Roboto', sans-serif;
 
         #markdownTextArea {
