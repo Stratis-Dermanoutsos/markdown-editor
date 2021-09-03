@@ -6,7 +6,7 @@
 
 - [x] Make completely responsive
 - [x] Fix UI
-- [ ] Enable file upload function
+- [x] Enable file upload function
 - [ ] Implement snippets
 
 <ins>Note</ins>: This file was written using the app.
